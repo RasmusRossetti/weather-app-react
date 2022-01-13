@@ -2,7 +2,7 @@ import {useState} from 'react';
 
 const api = {
   key: "41e05c2f987223eeffefc1c326cd0326",
-  base:" http://api.openweathermap.org/data/2.5/"
+  base:"https://api.openweathermap.org/data/2.5/"
 }
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
   const [weather,setWeather] = useState({});
 //setting event on Enter to make a fetch request on weather api
   const search = evt =>{
-    if (evt.key == "Enter"){
+    if (evt.key === "Enter"){
       fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
       .then(res => res.json())
       .then(result => {
@@ -57,7 +57,7 @@ function App() {
          <div>
            <div className="location-box">
 
-<div className="location">{weather.name},{weather.sys.country}</div>
+<div className="location"> {weather.name},{weather.sys.country} </div>
 <div className="date">{dateBuilder(new Date())}</div>
 </div> 
 <div className="weather-box">
