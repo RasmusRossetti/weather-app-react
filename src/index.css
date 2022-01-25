@@ -100,3 +100,7 @@ input {
     margin-bottom: 5%;
   }
 }
+.Main-header{
+  text-align: center;
+  font-size: 2rem;
+}

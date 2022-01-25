@@ -44,6 +44,7 @@ function App() {
       
 
        <main>
+         <h1 className='Main-header'>Enter your favorite destination</h1>
          <div className="search-box">
             <input type="text"
             className="search-bar"
