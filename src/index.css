@@ -30,7 +30,7 @@ main {
 .search-box {
   width: 100%;
   margin: 0 0 75px;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 .search-box .search-bar {
   display: block;
@@ -100,7 +100,9 @@ input {
     margin-bottom: 5%;
   }
 }
-.Main-header{
+.Main-header {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.746);
+  padding-top: 4rem;
 }
